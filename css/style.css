@@ -787,3 +787,9 @@
         padding-top: 180px;
     }
 }
+
+@media (max-width: 375px) {
+    .hero__title{
+        font-size: 35px;
+    }
+}
