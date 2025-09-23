@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/normolize.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="header__container container">
+            <div class="header__left">
+                <button class="header__burger" aria-label="Открыть меню">
+                    <span></span><span></span>
+                </button>
+                <div class="header__rating header__rating--desktop">
+                    <img src="./assets/svg/yandex.svg" alt="Yandex" class="header__rating-icon">
+                    <div class="header__rating-info">
+                        <span class="header__rating-score">Рейтинг • 4.9</span>
+                        <span class="header__rating-reviews">135 отзывов</span>
+                    </div>
+                </div>
+                <div class="header__desc">
+                    Салон красоты премиального уровня в Ставрополе
+                </div>
+            </div>
+            <div class="header__logo">
+                <img src="./assets/svg/logo.svg" alt="АнгеЛ Concept" class="header__logo-img">
+            </div>
+            <div class="header__right">
+                <div class="header__socials">
+                    <a href="#" class="header__socials-icon ">
+                        <img class="header__socials-icon--whatsapp" src="./assets/svg/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    <a href="#" class="header__socials-icon ">
+                        <img class="header__socials-icon--telegram" src="./assets/svg/telegram.svg" alt="telegram">
+                    </a>
+                </div>
+
+                <div class="header__contacts">
+                    <a href="tel:+79100044636" class="header__contacts-phone">+7 910 004-46-36</a>
+                    <span class="header__contacts-time">Пн–Вс, с 10:00–22:00</span>
+                </div>
+
+                <a href="#" class="header__btn btn--secondary btn">Запись на приём</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__container container">
+        <nav class="header__bottom">
+            <ul class="menu menu--desktop">
+                <li class="menu__item menu__item--has-sub">
+                    <a href="#" class="menu__link">Все услуги</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="#">Услуга 1</a></li>
+                        <li class="submenu__item"><a href="#">Услуга 2</a></li>
+                        <li class="submenu__item"><a href="#">Услуга 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">О центре</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Косметология</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">SPA & Thai</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Велнесс-терапия</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">SPA & Релакс</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Коррекция фигуры</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Журнал</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Сертификаты</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav class="menu menu--mobile">
+
+        <div class="menu__top">
+            <button class="header__burger" aria-label="Закрыть меню">
+                <img class="header__burger-close" src="./assets/svg/close.svg" alt="close">
+            </button>
+
+            <div class="header__logo">
+                <img src="./assets/svg/logo-black.svg" alt="АнгеЛ Concept" class="header__logo-img">
+            </div>
+            <div class="header__socials">
+                <a href="#" class="header__socials-icon ">
+                    <img class="header__socials-icon--whatsapp" src="./assets/svg/whatsapp-color.svg" alt="whatsapp">
+                </a>
+                <a href="#" class="header__socials-icon ">
+                    <img class="header__socials-icon--telegram" src="./assets/svg/tg-color.svg" alt="telegram">
+                </a>
+            </div>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    SPA & Релакс
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Массаж</a></li>
+                    <li class="menu__submenu-item"><a href="#">Релакс-программы</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    Wellness-терапия
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Детокс</a></li>
+                    <li class="menu__submenu-item"><a href="#">Оздоровительные программы</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    Коррекция фигуры
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Детокс</a></li>
+                    <li class="menu__submenu-item"><a href="#">Оздоровительные программы</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    Косметология лица
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Уходовые процедуры</a></li>
+                    <li class="menu__submenu-item"><a href="#">Инъекционная косметология</a></li>
+                    <li class="menu__submenu-item"><a href="#">Аппаратная косметология</a></li>
+                    <li class="menu__submenu-item"><a href="#">Нитевой лифтинг</a></li>
+                    <li class="menu__submenu-item"><a href="#">Контурная пластика</a></li>
+                    <li class="menu__submenu-item"><a href="#">PRP-терапия</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    Beauty-услуги
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Детокс</a></li>
+                    <li class="menu__submenu-item"><a href="#">Оздоровительные программы</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    Дополнительно
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Детокс</a></li>
+                    <li class="menu__submenu-item"><a href="#">Оздоровительные программы</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    О компании
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Детокс</a></li>
+                    <li class="menu__submenu-item"><a href="#">Оздоровительные программы</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--has-submenu">
+                <button class="menu__toggle" type="button">
+                    О центре
+                    <span class="menu__arrow"></span>
+                </button>
+                <ul class="menu__submenu">
+                    <li class="menu__submenu-item"><a href="#">Детокс</a></li>
+                    <li class="menu__submenu-item"><a href="#">Оздоровительные программы</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="menu__bottom info">
+            <div class="info__location">
+                <span><img src="./assets/svg/location.svg" alt="location">Ждём вас по адресу:</span>
+                <a href="#">г. Ставрополь ул.. Ленина 440 В</a>
+            </div>
+            <div class="info__phone">
+                <span>Звоните:</span>
+                <a href="tel:+79100044636">+7 910 004-46-36</a>
+                <span>Понедельник–Воскресенье <br/>с 10:00–22:00</span>
+            </div>
+            <a href="#" class="btn btn--primary info-btn">записаться на приём</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="header__rating header__rating--mobile">
+            <img src="./assets/svg/yandex.svg" alt="Yandex" class="header__rating-icon">
+            <div class="header__rating-info">
+                <span class="header__rating-score">Рейтинг • 4.9</span>
+                <span class="header__rating-reviews">135 отзывов</span>
+            </div>
+        </div>
+        <div class="swiper hero__slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide hero__slide">
+                    <video
+                            class="hero__bg"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            preload="metadata"
+                            poster="./assets/img/slide1.webp">
+                        <source src="./assets/img/slide1.webm" type="video/webm">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                    <div class="hero__slide-container container">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Ангел Concept —
+                                центр премиального ухода и косметологии в Ставрополе</h1>
+                            <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                                профессионально и легко</p>
+                            <a href="#" class="hero__btn btn--primary btn">подробнее об услугах</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                    <picture>
+                        <source
+                                srcset="/assets/img/slide2.webp"
+                                media="(min-width: 768px)">
+                        <img
+                                class="swiper-lazy hero__bg"
+                                src="/assets/img/slide2-mob.webp"
+                                alt="">
+                    </picture>
+                    <div class="hero__slide-container container">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Косметология: уходы, инъекции, лифтинг</h1>
+                            <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                                профессионально и легко</p>
+                            <a href="#" class="hero__btn btn--primary btn">Выбрать процедуру</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                    <picture>
+                        <source
+                                srcset="/assets/img/slide3.webp"
+                                media="(min-width: 768px)">
+                        <img
+                                class="swiper-lazy hero__bg"
+                                src="/assets/img/slide3-mob.webp"
+                                alt="">
+                    </picture>
+                    <div class="hero__slide-container container">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Коррекция фигуры и силуэта</h1>
+                            <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                                профессионально и легко</p>
+                            <a href="#" class="hero__btn btn--primary btn">Выбрать процедуру</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                    <video
+                            class="hero__bg"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            preload="metadata"
+                            poster="./assets/img/slide1.webp">
+                        <source src="./assets/img/slide1.webm" type="video/webm">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                    <div class="hero__slide-container container">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Ангел Concept —
+                                центр премиального ухода и косметологии в Ставрополе</h1>
+                            <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                                профессионально и легко</p>
+                            <a href="#" class="hero__btn btn--primary btn">подробнее об услугах</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                    <picture>
+                        <source
+                                srcset="/assets/img/slide2.webp"
+                                media="(min-width: 768px)">
+                        <img
+                                class="swiper-lazy hero__bg"
+                                src="/assets/img/slide2-mob.webp"
+                                alt="">
+                    </picture>
+                    <div class="hero__slide-container container">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Косметология: уходы, инъекции, лифтинг</h1>
+                            <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                                профессионально и легко</p>
+                            <a href="#" class="hero__btn btn--primary btn">Выбрать процедуру</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                    <picture>
+                        <source
+                                srcset="/assets/img/slide3.webp"
+                                media="(min-width: 768px)">
+                        <img
+                                class="swiper-lazy hero__bg"
+                                src="/assets/img/slide3-mob.webp"
+                                alt="">
+                    </picture>
+                    <div class="hero__slide-container container">
+                        <div class="hero__content ">
+                            <h1 class="hero__title">Коррекция фигуры и силуэта</h1>
+                            <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                                профессионально и легко</p>
+                            <a href="#" class="hero__btn btn--primary btn">Выбрать процедуру</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero__pagination"></div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<script src="main.js"></script>
+</body>
+</html>
