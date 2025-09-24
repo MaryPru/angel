@@ -13,7 +13,18 @@ document.addEventListener('DOMContentLoaded',function (){
 
     const heroSwiper = new Swiper('.hero__slider', {
         loop: true,
-        effect: 'fade',
+        effect: 'creative',
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: ["-120%", 0, -200],
+                scale: 0.8,
+            },
+            next: {
+                translate: ["100%", 0, 0],
+                scale: 1.2,
+            },
+        },
         autoplay: {
             delay: autoplayDelay,
             disableOnInteraction: false,
